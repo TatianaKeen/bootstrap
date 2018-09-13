@@ -229,7 +229,16 @@ h3 {
 	color: #fff;
 }		
 
-
+.search {
+	position: absolute;
+	color: #fff;
+	font-size: 22px;
+	line-height: 50px;
+	right: 25px;
+	cursor: pointer;
+	z-index: 30;
+	display: none;
+}
 
 
 
@@ -261,7 +270,16 @@ h3 {
 	}
 
 	.main-menu .navbar-form {
-		margin-left: 125px;
+		position: absolute;
+		right: 15px;
+		background: rgba(0, 0, 0, 0.5);
+		padding: 15px;
+		margin: 0;
+		display: none;
+	} 
+
+	.search {
+		display: block;
 	}
 }
 
@@ -347,6 +365,18 @@ h3 {
 		position: relative;
 		z-index: 20;
 	}
+
+	.search {
+		display: none;
+	}
+
+	.main-menu .navbar-form {
+		display: block !important;
+		position: relative;
+		right: 0;
+		background: transparent;
+	} 
+
 }
 
 
@@ -362,4 +392,12 @@ h3 {
 		position: relative;
 		z-index: 20;
 	}
+}
+
+
+
+@media only screen and (min-width : 1200px) {
+	.main-menu .navbar-form {
+		display: block !important;
+	} 
 }
