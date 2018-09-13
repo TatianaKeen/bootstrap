@@ -240,9 +240,18 @@ h3 {
 	display: none;
 }
 
+.main-slogan {
+	background: #fff;
+	text-align: center;
+	padding: 50px 0;
+	border-top: 1px solid #cfcfcf;
+	border-bottom: 3px solid #dadada;
+}
 
-
-
+.main-slogan h1 {
+	font-size: 30px;
+	margin: 0;
+}
 
 
 
