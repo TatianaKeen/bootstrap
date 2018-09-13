@@ -101,15 +101,49 @@ h3 {
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 1;
 }
 
 .carousel.fade .item.active
 {
 	opacity: 1;
 	position: relative;
+	z-index: 2;
 }
 
+.menu-carousel .carousel-caption {
+	left: 0;
+	top: 170px;
+}
 
+.menu-carousel .carousel-caption h1 {
+	font-weight: 700;
+	font-size: 48px;
+}
+
+.menu-carousel .carousel-caption h3 {
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+
+.menu-carousel .carousel-caption .btn-red {
+	padding: 20px 30px;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 24px;
+}
+
+.menu-carousel .carousel-caption .btn-red:hover {
+	text-decoration: none;
+}
+
+.menu-carousel .container {
+	position: relative;
+}
+
+.menu-carousel .carousel-control {
+	z-index: 10;
+}
 
 
 
@@ -130,9 +164,23 @@ h3 {
 	}
 }
 
+@media only screen and (max-width : 1070px) {
+	.menu-carousel .carousel-caption {
+		left: 20%;
+	}
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	
+	.menu-carousel .carousel-caption h1 {
+		font-size: 40px;
+	}
+
+	.menu-carousel .carousel-caption h3 {
+		font-size: 22px;
+		margin-bottom: 40px;
+	}
+
 }
 
 /* Small Devices, Tablets */
@@ -149,9 +197,25 @@ h3 {
 	.menu-top .navbar-collapse {
 		padding-left: 15px;
 	}
+
+		.menu-carousel .carousel-caption h1 {
+		font-size: 38px;
+	}
+
+	.menu-carousel .carousel-caption h3 {
+		font-size: 20px;
+		margin-bottom: 40px;
+	}
+
+	.menu-carousel .carousel-caption .btn-red {
+		padding: 15px 20px;
+		font-size: 16px;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.menu-carousel .carousel-caption .btn-red {
+		font-size: 14px;
+	}
 }
